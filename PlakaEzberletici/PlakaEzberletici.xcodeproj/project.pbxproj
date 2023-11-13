@@ -96,11 +96,11 @@
 		EE1BCDCD2B02B380005D74CB /* PlakaEzberletici */ = {
 			isa = PBXGroup;
 			children = (
+				EEB5CC0F2B02B4A7000DBE03 /* Plakalar.swift */,
 				EE1BCDCE2B02B380005D74CB /* PlakaEzberleticiApp.swift */,
 				EE1BCDD02B02B380005D74CB /* ContentView.swift */,
 				EE1BCDD22B02B381005D74CB /* Assets.xcassets */,
 				EE1BCDD42B02B381005D74CB /* Preview Content */,
-				EEB5CC0F2B02B4A7000DBE03 /* Plakalar.swift */,
 			);
 			path = PlakaEzberletici;
 			sourceTree = "<group>";

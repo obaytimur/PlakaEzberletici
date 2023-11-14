@@ -22,7 +22,7 @@ struct ContentView: View {
                         .multilineTextAlignment(.center)
                         .padding()
                         .frame(width: 300, height: 200)
-                        .background(Rectangle().fill(Color.white).shadow(radius: 3))
+                        .background(Rectangle().fill(Color(UIColor.systemBackground)).shadow(radius: 3))
                         .onTapGesture {
                             tapPressed = false
                         }
@@ -34,7 +34,7 @@ struct ContentView: View {
                         .multilineTextAlignment(.center)
                         .padding()
                         .frame(width: 300, height: 200)
-                        .background(Rectangle().fill(Color.white).shadow(radius: 3))
+                        .background(Rectangle().fill(Color(UIColor.systemBackground)).shadow(radius: 3))
                         .onTapGesture {
                             tapPressed = true
                         }

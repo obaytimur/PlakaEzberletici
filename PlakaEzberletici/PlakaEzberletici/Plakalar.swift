@@ -88,23 +88,23 @@ let plakalar: [String: String] = [
         "78": "Karabuk",
         "79": "Kilis",
         "80": "Osmaniye",
-        "81": "Duzce"
-        "82": "Kerkuk"
-        "83": "Musul"
-        "84": "Suleymaniye"
-        "85": "Batum"
-        "86": "Halep"
-        "87": "Rakka"
-        "88": "Deyziyor"
-        "89": "Kibris"
-        "90": "Rodos"
-        "91": "Gumulcine"
-        "92": "Dedeagac"
-        "93": "Girist"
-        "94": "Selanik"
-        "95": "Nahcivan"
-        "96": "Kamisli"
-        "97": "Kirim"
-        "98": "Erivan"
+        "81": "Duzce",
+        "82": "Kerkuk",
+        "83": "Musul",
+        "84": "Suleymaniye",
+        "85": "Batum",
+        "86": "Halep",
+        "87": "Rakka",
+        "88": "Deyziyor",
+        "89": "Kibris",
+        "90": "Rodos",
+        "91": "Gumulcine",
+        "92": "Dedeagac",
+        "93": "Girist",
+        "94": "Selanik",
+        "95": "Nahcivan",
+        "96": "Kamisli",
+        "97": "Kirim",
+        "98": "Erivan",
         "99": "Allah"
 ]

@@ -100,7 +100,7 @@ let plakalar: [String: String] = [
         "90": "Rodos",
         "91": "Gumulcine",
         "92": "Dedeagac",
-        "93": "Girist",
+        "93": "Girit",
         "94": "Selanik",
         "95": "Nahcivan",
         "96": "Kamisli",

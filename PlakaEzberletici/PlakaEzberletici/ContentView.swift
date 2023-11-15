@@ -26,32 +26,31 @@ struct ContentView: View {
         VStack {
             Spacer()
             if let cityName = plakalar[String(randomInt)]{
-                if tapPressed {
-                    Text("\(cityName)")
-                        .font(.custom("ArialRoundedMTBold", fixedSize: 60))
-                        .fixedSize(horizontal: false, vertical: true)
-                        .foregroundStyle(Color(hex: 0x354FAB))
-                        .multilineTextAlignment(.center)
-                        .padding()
-                        .frame(width: 300, height: 300)
-                        .clipShape(RoundedRectangle(cornerRadius: 10))
-                        .background(Color(hex: 0xD7DCEE).shadow(radius: 5))                        .onTapGesture {
-                            tapPressed = false
-                        }
-                }
-                else{
+                VStack{
                     Text("\(randomInt)")
                         .font(.custom("ArialRoundedMTBold", fixedSize: 150))
                         .fixedSize(horizontal: false, vertical: true)
                         .foregroundStyle(Color(hex: 0x354FAB))
                         .multilineTextAlignment(.center)
                         .padding()
-                        .frame(width: 300, height: 300)
+                        .frame(width: 250, height: 250)
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                         .background(Color(hex: 0xD7DCEE).shadow(radius: 5))
+                        .cornerRadius(15)
                         .onTapGesture {
-                            tapPressed = true
+                            tapPressed = !tapPressed
                         }
+                    if tapPressed {
+                        Text("\(cityName)")
+                            .font(.custom("ArialRoundedMTBold", fixedSize: 50))
+                            .fixedSize(horizontal: false, vertical: true)
+                            .foregroundStyle(Color(hex: 0x354FAB))
+                            .multilineTextAlignment(.center)
+                            .padding()
+                            .onTapGesture {
+                                tapPressed = false
+                            }
+                    }
                 }
             }
             Spacer()
@@ -60,7 +59,6 @@ struct ContentView: View {
                 tapPressed = false
             }
         }
-        .padding()
     }
 }
 

@@ -22,6 +22,8 @@ struct ContentView: View {
     @State private var randomInt = Int.random(in: 10..<100)
     @State private var size = 300.0
     @State private var tapPressed = false
+    @State private var isDarkMode = false
+    @Environment(\.colorScheme) private var colorScheme
     var body: some View {
         VStack {
             Spacer()
@@ -30,12 +32,12 @@ struct ContentView: View {
                         Text("\(randomInt)")
                             .font(.custom("ArialRoundedMTBold", fixedSize: 150))
                             .fixedSize(horizontal: false, vertical: true)
-                            .foregroundStyle(Color(hex: 0x354FAB))
+                            .foregroundStyle(colorScheme == .dark ? Color(hex: 0x354FAB) : Color(hex: 0xD7DCEE))
                             .multilineTextAlignment(.center)
                             .padding()
                             .frame(width: 250, height: 250)
                             .clipShape(RoundedRectangle(cornerRadius: 10))
-                            .background(Color(hex: 0xD7DCEE).shadow(radius: 5))
+                            .background(colorScheme == .dark ? Color(hex: 0xD7DCEE) : Color(hex: 0x354FAB))
                             .cornerRadius(15)
                             .onTapGesture {
                                 tapPressed = !tapPressed
@@ -48,7 +50,7 @@ struct ContentView: View {
                                 .opacity(tapPressed ? 1 : 0)
                                 .font(.custom("ArialRoundedMTBold", fixedSize: 50))
                                 .fixedSize(horizontal: false, vertical: true)
-                                .foregroundStyle(Color(hex: 0x354FAB))
+                                .foregroundStyle(colorScheme == .dark ? Color(hex: 0xD7DCEE) : Color(hex: 0x354FAB))
                                 .multilineTextAlignment(.center)
                                 .onTapGesture {
                                     tapPressed = false
@@ -61,6 +63,8 @@ struct ContentView: View {
                 tapPressed = false
             }
         }
+        .frame(maxWidth: .infinity)
+        .background(colorScheme == .dark ? Color(hex: 0x354FAB) : Color(hex: 0xD7DCEE))
     }
 }
 

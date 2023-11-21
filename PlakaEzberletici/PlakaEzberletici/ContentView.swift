@@ -45,7 +45,7 @@ struct ContentView: View {
                 if nameToggle{
                     VStack{
                         Text("\(cityName)")
-                            .font(.custom("ArialRoundedMTBold", fixedSize: 50))
+                            .font(.custom("ArialRoundedMTBold", fixedSize: 40))
                             .fixedSize(horizontal: false, vertical: true)
                             .foregroundStyle(isDarkMode != true ? Color(hex: 0x354FAB) : Color(hex: 0xD7DCEE))
                             .multilineTextAlignment(.center)

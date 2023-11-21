@@ -14,6 +14,9 @@
 		EE1BCDE02B02B381005D74CB /* PlakaEzberleticiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1BCDDF2B02B381005D74CB /* PlakaEzberleticiTests.swift */; };
 		EE1BCDEA2B02B381005D74CB /* PlakaEzberleticiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1BCDE92B02B381005D74CB /* PlakaEzberleticiUITests.swift */; };
 		EE1BCDEC2B02B381005D74CB /* PlakaEzberleticiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1BCDEB2B02B381005D74CB /* PlakaEzberleticiUITestsLaunchTests.swift */; };
+		EE1FDE6B2B0CC5A2001CC38A /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1FDE6A2B0CC5A2001CC38A /* City.swift */; };
+		EE1FDE6D2B0CC5AE001CC38A /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1FDE6C2B0CC5AE001CC38A /* Deck.swift */; };
+		EE1FDE6F2B0CC715001CC38A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1FDE6E2B0CC715001CC38A /* Constants.swift */; };
 		EEB5CC102B02B4A7000DBE03 /* Plakalar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB5CC0F2B02B4A7000DBE03 /* Plakalar.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +48,9 @@
 		EE1BCDE52B02B381005D74CB /* PlakaEzberleticiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlakaEzberleticiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE1BCDE92B02B381005D74CB /* PlakaEzberleticiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlakaEzberleticiUITests.swift; sourceTree = "<group>"; };
 		EE1BCDEB2B02B381005D74CB /* PlakaEzberleticiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlakaEzberleticiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE1FDE6A2B0CC5A2001CC38A /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		EE1FDE6C2B0CC5AE001CC38A /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		EE1FDE6E2B0CC715001CC38A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EEB5CC0F2B02B4A7000DBE03 /* Plakalar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plakalar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,11 +102,15 @@
 		EE1BCDCD2B02B380005D74CB /* PlakaEzberletici */ = {
 			isa = PBXGroup;
 			children = (
-				EEB5CC0F2B02B4A7000DBE03 /* Plakalar.swift */,
 				EE1BCDCE2B02B380005D74CB /* PlakaEzberleticiApp.swift */,
-				EE1BCDD02B02B380005D74CB /* ContentView.swift */,
+				EE1FDE662B0CC30A001CC38A /* Data */,
+				EE1FDE672B0CC30F001CC38A /* Models */,
+				EE1FDE682B0CC315001CC38A /* View Models */,
+				EE1FDE692B0CC321001CC38A /* Views */,
 				EE1BCDD22B02B381005D74CB /* Assets.xcassets */,
 				EE1BCDD42B02B381005D74CB /* Preview Content */,
+				EEB5CC0F2B02B4A7000DBE03 /* Plakalar.swift */,
+				EE1BCDD02B02B380005D74CB /* ContentView.swift */,
 			);
 			path = PlakaEzberletici;
 			sourceTree = "<group>";
@@ -128,6 +138,37 @@
 				EE1BCDEB2B02B381005D74CB /* PlakaEzberleticiUITestsLaunchTests.swift */,
 			);
 			path = PlakaEzberleticiUITests;
+			sourceTree = "<group>";
+		};
+		EE1FDE662B0CC30A001CC38A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EE1FDE672B0CC30F001CC38A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE1FDE6A2B0CC5A2001CC38A /* City.swift */,
+				EE1FDE6C2B0CC5AE001CC38A /* Deck.swift */,
+				EE1FDE6E2B0CC715001CC38A /* Constants.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EE1FDE682B0CC315001CC38A /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		EE1FDE692B0CC321001CC38A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,9 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE1FDE6B2B0CC5A2001CC38A /* City.swift in Sources */,
 				EE1BCDD12B02B380005D74CB /* ContentView.swift in Sources */,
+				EE1FDE6D2B0CC5AE001CC38A /* Deck.swift in Sources */,
 				EE1BCDCF2B02B380005D74CB /* PlakaEzberleticiApp.swift in Sources */,
 				EEB5CC102B02B4A7000DBE03 /* Plakalar.swift in Sources */,
+				EE1FDE6F2B0CC715001CC38A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

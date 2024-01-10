@@ -14,6 +14,9 @@
 		EE1BCDE02B02B381005D74CB /* PlakaEzberleticiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1BCDDF2B02B381005D74CB /* PlakaEzberleticiTests.swift */; };
 		EE1BCDEA2B02B381005D74CB /* PlakaEzberleticiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1BCDE92B02B381005D74CB /* PlakaEzberleticiUITests.swift */; };
 		EE1BCDEC2B02B381005D74CB /* PlakaEzberleticiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1BCDEB2B02B381005D74CB /* PlakaEzberleticiUITestsLaunchTests.swift */; };
+		EE7C91482B4EC4A6001528EA /* FrontCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C91472B4EC4A6001528EA /* FrontCardView.swift */; };
+		EE7C914A2B4ED73D001528EA /* CardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C91492B4ED73D001528EA /* CardModifier.swift */; };
+		EE7C914D2B4ED9B3001528EA /* BackCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C914C2B4ED9B3001528EA /* BackCardView.swift */; };
 		EEB5CC102B02B4A7000DBE03 /* Plakalar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB5CC0F2B02B4A7000DBE03 /* Plakalar.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +48,9 @@
 		EE1BCDE52B02B381005D74CB /* PlakaEzberleticiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlakaEzberleticiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE1BCDE92B02B381005D74CB /* PlakaEzberleticiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlakaEzberleticiUITests.swift; sourceTree = "<group>"; };
 		EE1BCDEB2B02B381005D74CB /* PlakaEzberleticiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlakaEzberleticiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE7C91472B4EC4A6001528EA /* FrontCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCardView.swift; sourceTree = "<group>"; };
+		EE7C91492B4ED73D001528EA /* CardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
+		EE7C914C2B4ED9B3001528EA /* BackCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackCardView.swift; sourceTree = "<group>"; };
 		EEB5CC0F2B02B4A7000DBE03 /* Plakalar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plakalar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +102,7 @@
 		EE1BCDCD2B02B380005D74CB /* PlakaEzberletici */ = {
 			isa = PBXGroup;
 			children = (
+				EE7C91462B4EC485001528EA /* Views */,
 				EEB5CC0F2B02B4A7000DBE03 /* Plakalar.swift */,
 				EE1BCDCE2B02B380005D74CB /* PlakaEzberleticiApp.swift */,
 				EE1BCDD02B02B380005D74CB /* ContentView.swift */,
@@ -128,6 +135,16 @@
 				EE1BCDEB2B02B381005D74CB /* PlakaEzberleticiUITestsLaunchTests.swift */,
 			);
 			path = PlakaEzberleticiUITests;
+			sourceTree = "<group>";
+		};
+		EE7C91462B4EC485001528EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE7C91472B4EC4A6001528EA /* FrontCardView.swift */,
+				EE7C914C2B4ED9B3001528EA /* BackCardView.swift */,
+				EE7C91492B4ED73D001528EA /* CardModifier.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +277,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE7C91482B4EC4A6001528EA /* FrontCardView.swift in Sources */,
+				EE7C914D2B4ED9B3001528EA /* BackCardView.swift in Sources */,
+				EE7C914A2B4ED73D001528EA /* CardModifier.swift in Sources */,
 				EE1BCDD12B02B380005D74CB /* ContentView.swift in Sources */,
 				EE1BCDCF2B02B380005D74CB /* PlakaEzberleticiApp.swift in Sources */,
 				EEB5CC102B02B4A7000DBE03 /* Plakalar.swift in Sources */,

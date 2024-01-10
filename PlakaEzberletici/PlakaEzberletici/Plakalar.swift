@@ -107,3 +107,20 @@ let plakalar: [String: String] = [
         "97": "Kırım",
         "98": "Erivan",
 ]
+
+struct City: Codable{
+    var name: String
+    var plate: Int
+    var answers: [String]
+}
+
+enum Constans {
+    static let cities = [
+        City(name: "Adana", plate: 01, answers: ["Adana", "Adıyaman", "Afyon", "Ağrı"]),
+        City(name: "Adıyaman", plate: 02, answers: ["Adana", "Adıyaman", "Afyon", "Ağrı"]),
+    ]
+    
+    static let cardHeight: CGFloat = 250
+    static let cardWidth: CGFloat = 300
+}
+

@@ -20,6 +20,8 @@
 		EE7C914A2B4ED73D001528EA /* CardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C91492B4ED73D001528EA /* CardModifier.swift */; };
 		EE7C914D2B4ED9B3001528EA /* BackCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C914C2B4ED9B3001528EA /* BackCardView.swift */; };
 		EEB3848E2B50518C00497D0C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB3848D2B50518C00497D0C /* ContentViewModel.swift */; };
+		EEB384922B5058B000497D0C /* FlipAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB384912B5058B000497D0C /* FlipAnimation.swift */; };
+		EEB384942B505CEF00497D0C /* CityCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB384932B505CEF00497D0C /* CityCardView.swift */; };
 		EEB5CC102B02B4A7000DBE03 /* Plakalar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB5CC0F2B02B4A7000DBE03 /* Plakalar.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +59,8 @@
 		EE7C91492B4ED73D001528EA /* CardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
 		EE7C914C2B4ED9B3001528EA /* BackCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackCardView.swift; sourceTree = "<group>"; };
 		EEB3848D2B50518C00497D0C /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		EEB384912B5058B000497D0C /* FlipAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipAnimation.swift; sourceTree = "<group>"; };
+		EEB384932B505CEF00497D0C /* CityCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCardView.swift; sourceTree = "<group>"; };
 		EEB5CC0F2B02B4A7000DBE03 /* Plakalar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plakalar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +156,8 @@
 				EE70722B2B5049B30016595F /* CardFan.swift */,
 				EEB3848D2B50518C00497D0C /* ContentViewModel.swift */,
 				EE1BCDD02B02B380005D74CB /* ContentView.swift */,
+				EEB384912B5058B000497D0C /* FlipAnimation.swift */,
+				EEB384932B505CEF00497D0C /* CityCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -286,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEB384942B505CEF00497D0C /* CityCardView.swift in Sources */,
 				EE7C91482B4EC4A6001528EA /* FrontCardView.swift in Sources */,
 				EE7C914D2B4ED9B3001528EA /* BackCardView.swift in Sources */,
 				EE7C914A2B4ED73D001528EA /* CardModifier.swift in Sources */,
@@ -293,6 +300,7 @@
 				EE70722A2B5047B60016595F /* MiniCardView.swift in Sources */,
 				EEB3848E2B50518C00497D0C /* ContentViewModel.swift in Sources */,
 				EE1BCDCF2B02B380005D74CB /* PlakaEzberleticiApp.swift in Sources */,
+				EEB384922B5058B000497D0C /* FlipAnimation.swift in Sources */,
 				EEB5CC102B02B4A7000DBE03 /* Plakalar.swift in Sources */,
 				EE70722C2B5049B30016595F /* CardFan.swift in Sources */,
 			);

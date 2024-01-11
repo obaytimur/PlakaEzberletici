@@ -13,7 +13,7 @@ struct BackCardView: View {
     
     var body: some View {
         VStack {
-            Text("\(city.plate)")
+            Text("\(city.name)")
                 .font(.custom("ArialRoundedMTBold", fixedSize: 50))
                 .foregroundStyle(Color(hex: 0x354FAB))
         }.card()

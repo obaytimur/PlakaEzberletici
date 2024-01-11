@@ -129,4 +129,3 @@ enum Constants {
     
     static let appTitle = "Plakalar"
 }
-

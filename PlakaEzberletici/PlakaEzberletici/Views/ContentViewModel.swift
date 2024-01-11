@@ -16,6 +16,12 @@ final class ContentViewModel: ObservableObject {
                 self.splashScreenState = .off
             }
         }
+        
+        let splashAnimation = FlipAnimation(animation: .spring, duration: 1.0) {
+            self.splashScreenState = .off
+        }
+        
+        splashAnimation.playAfter(duration: 1.5)
     }
 }
 

@@ -22,6 +22,6 @@ struct BackCardView: View {
 
 struct BackCardView_Preview: PreviewProvider {
     static var previews: some View{
-        BackCardView(city: Constans.cities.first!)
+        BackCardView(city: Constants.cities.first!)
     }
 }

@@ -110,17 +110,23 @@ let plakalar: [String: String] = [
 
 struct City: Codable{
     var name: String
-    var plate: Int
+    var plate: String
     var answers: [String]
 }
 
-enum Constans {
+enum Constants {
     static let cities = [
-        City(name: "Adana", plate: 01, answers: ["Adana", "Adıyaman", "Afyon", "Ağrı"]),
-        City(name: "Adıyaman", plate: 02, answers: ["Adana", "Adıyaman", "Afyon", "Ağrı"]),
+        City(name: "Adana", plate: "01", answers: ["Adana", "Adıyaman", "Afyon", "Ağrı"]),
+        City(name: "Adıyaman", plate: "02", answers: ["Adana", "Adıyaman", "Afyon", "Ağrı"]),
+        City(name: "Afyon", plate: "03", answers: ["Adıyaman", "Afyon", "Ağrı", "Amasya"])
     ]
     
-    static let cardHeight: CGFloat = 250
+    static let cardHeight: CGFloat = 550
     static let cardWidth: CGFloat = 300
+    
+    static let miniCardHeight: CGFloat = 250
+    static let miniCardWidth: CGFloat = 150
+    
+    static let appTitle = "Plakalar"
 }
 

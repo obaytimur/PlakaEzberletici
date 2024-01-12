@@ -112,9 +112,11 @@
 		EE1BCDCD2B02B380005D74CB /* PlakaEzberletici */ = {
 			isa = PBXGroup;
 			children = (
-				EE7C91462B4EC485001528EA /* Views */,
-				EEB5CC0F2B02B4A7000DBE03 /* Plakalar.swift */,
 				EE1BCDCE2B02B380005D74CB /* PlakaEzberleticiApp.swift */,
+				EE6312402B51672000CB8E23 /* Data */,
+				EE6312412B51675000CB8E23 /* Models */,
+				EE63123F2B51671200CB8E23 /* View Models */,
+				EE7C91462B4EC485001528EA /* Views */,
 				EE1BCDD22B02B381005D74CB /* Assets.xcassets */,
 				EE1BCDD42B02B381005D74CB /* Preview Content */,
 			);
@@ -146,6 +148,29 @@
 			path = PlakaEzberleticiUITests;
 			sourceTree = "<group>";
 		};
+		EE63123F2B51671200CB8E23 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				EEB3848D2B50518C00497D0C /* ContentViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		EE6312402B51672000CB8E23 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EEB5CC0F2B02B4A7000DBE03 /* Plakalar.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EE6312412B51675000CB8E23 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		EE7C91462B4EC485001528EA /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,7 +179,6 @@
 				EE7C91492B4ED73D001528EA /* CardModifier.swift */,
 				EE7072292B5047B60016595F /* MiniCardView.swift */,
 				EE70722B2B5049B30016595F /* CardFan.swift */,
-				EEB3848D2B50518C00497D0C /* ContentViewModel.swift */,
 				EE1BCDD02B02B380005D74CB /* ContentView.swift */,
 				EEB384912B5058B000497D0C /* FlipAnimation.swift */,
 				EEB384932B505CEF00497D0C /* CityCardView.swift */,

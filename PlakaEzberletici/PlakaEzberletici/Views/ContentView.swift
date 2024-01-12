@@ -56,7 +56,16 @@ extension ContentView {
     }
     private var mainScreen: some View {
         VStack {
+            mainList
             Spacer()
+        }
+    }
+    private var mainList: some View{
+        VStack {
+            NavigationLink(destination: GameView() ) {
+                Text("Start")
+                    .mainViewText()
+            }
         }
     }
 }

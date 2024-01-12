@@ -105,13 +105,14 @@ let plakalar: [String: String] = [
         "95": "Nahçıvan",
         "96": "Kamışlı",
         "97": "Kırım",
-        "98": "Erivan",
+        "98": "Erivan"
 ]
 
 struct City: Codable{
     var name: String
     var plate: String
     var answers: [String]
+    let randomOffSet = Double.random(in: -10.0...10.0)
 }
 
 enum Constants {

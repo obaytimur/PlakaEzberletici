@@ -12,6 +12,8 @@ final class GameViewModel: ObservableObject {
     @Published var flipped = false
     @Published var rotation: CGFloat = 0
     @Published var answers = [String]()
+    @Published var passing = false
+    @Published var failing = false
     
     var topCard: City {
         cards.isEmpty ? Constants.cities.first! : cards[cards.count-1]
@@ -54,8 +56,20 @@ final class GameViewModel: ObservableObject {
     }
     func submitAnswer(_ cityName: String) {
         gameState = .submitting
+        
+        let answerCorrect = cityName == topCard.name
         flipping()
+        flash(passing: answerCorrect)
         nextCard()
+    }
+    func flash(passing: Bool) {
+        let flashOff = FlipAnimation(duration: Constants.flasfAnimationLength, delay: Constants.flasfAnimationLength){
+            if passing {self.passing = false} else {self.failing = false}
+        }
+        let flashOn = FlipAnimation(duration: Constants.flasfAnimationLength, next: flashOff, delay: Constants.flasfAnimationLength) {
+            if passing {self.passing = true} else {self.failing = true}
+        }
+        flashOn.play()
     }
     func flipping() {
         let secondTurn = FlipAnimation(animation: .spring, duration: Constants.halfFlipAnimationLength, next: nil) {

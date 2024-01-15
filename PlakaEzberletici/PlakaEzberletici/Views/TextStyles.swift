@@ -16,3 +16,17 @@ extension Text {
             .shadow(color: .black.opacity(0.3), radius: 1, x: 0, y: 1)
     }
 }
+
+extension Image {
+    func correct() -> some View {
+        self.foregroundColor(.green)
+            .fontWeight(.thin)
+            .font(.system(size: 200))
+    }
+    
+    func wrong() -> some View {
+        self.foregroundColor(.red)
+            .fontWeight(.thin)
+            .font(.system(size: 200))
+    }
+}

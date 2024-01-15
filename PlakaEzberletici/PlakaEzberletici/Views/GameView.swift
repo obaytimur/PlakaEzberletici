@@ -15,6 +15,7 @@ struct GameView: View {
         VStack {
             ZStack {
                 cardPile
+                flashMarks
             }
             answerButtons
         }
@@ -82,5 +83,18 @@ extension GameView {
                 .mainViewText()
         }
         .disabled(vm.gameState != .playing)
+    }
+    @ViewBuilder
+    private var flashMarks: some View{
+        if vm.gameState == .submitting{
+            ZStack{
+                Image(systemName: "checkmark.circle.fill")
+                    .correct()
+                    .opacity(vm.passing ? 1 : 0)
+            }
+                Image(systemName: "x.circle.fill")
+                    .wrong()
+                    .opacity(vm.failing ? 1 : 0)
+        }
     }
 }

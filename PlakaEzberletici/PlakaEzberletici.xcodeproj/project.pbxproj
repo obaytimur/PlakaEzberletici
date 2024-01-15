@@ -166,7 +166,6 @@
 		EE6312402B51672000CB8E23 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				EEB5CC0F2B02B4A7000DBE03 /* Plakalar.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -174,6 +173,7 @@
 		EE6312412B51675000CB8E23 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EEB5CC0F2B02B4A7000DBE03 /* Plakalar.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";

@@ -117,16 +117,22 @@ struct City: Codable{
 
 enum Constants {
     static let cities = [
-        City(name: "Adana", plate: "01", answers: ["Adana", "Adıyaman", "Afyon", "Ağrı"]),
-        City(name: "Adıyaman", plate: "02", answers: ["Adana", "Adıyaman", "Afyon", "Ağrı"]),
-        City(name: "Afyon", plate: "03", answers: ["Adıyaman", "Afyon", "Ağrı", "Amasya"])
+        City(name: "Adana", plate: "01", answers: ["Adıyaman", "Afyon", "Ağrı"]),
+        City(name: "Adıyaman", plate: "02", answers: ["Adana", "Afyon", "Ağrı"]),
+        City(name: "Afyon", plate: "03", answers: ["Adıyaman", "Ağrı", "Amasya"]),
+        City(name: "Ağrı", plate: "04", answers: ["Afyon", "Amasya", "Ankara"]),
+        City(name: "Amasya", plate: "05", answers: ["Ağrı", "Ankara", "Antalya"]),
+        City(name: "Ankara", plate: "06", answers: ["Amasya", "Antalya", "Artvin"])
     ]
     
-    static let cardHeight: CGFloat = 550
+    static let cardHeight: CGFloat = 200
     static let cardWidth: CGFloat = 300
     
-    static let miniCardHeight: CGFloat = 250
-    static let miniCardWidth: CGFloat = 150
+    static let miniCardHeight: CGFloat = 200
+    static let miniCardWidth: CGFloat = 100
     
     static let appTitle = "Plakalar"
+    static let nextCardAnimationLength = 1.0
+    static let cardFlipAnimationLength: Double = 0.4
+    static var halfFlipAnimationLength: Double { Constants.cardFlipAnimationLength / 2 }
 }

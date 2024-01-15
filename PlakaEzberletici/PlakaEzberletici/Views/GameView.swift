@@ -16,6 +16,7 @@ struct GameView: View {
             ZStack {
                 cardPile
             }
+            answerButtons
         }
         .navigationTitle(Constants.appTitle)
         .navigationBarTitleDisplayMode(.large)
@@ -56,5 +57,30 @@ extension GameView {
                 .rotation3DEffect(.degrees(isTopCard ? vm.rotation + 180 : 0), axis: (x: 0.0, y: 1.0, z: 0.0))
                 .opacity(isTopCard ? vm.flipped ? 1 : 0 : 0)
         }
+    }
+    @ViewBuilder
+    private var answerButtons: some View {
+        if vm.gameState == .playing || vm.gameState == .submitting  {
+            VStack {
+                HStack{
+                    answerButton(cityName: vm.answers[0])
+                    answerButton(cityName: vm.answers[1])
+                }
+                HStack {
+                    answerButton(cityName: vm.answers[2])
+                    answerButton(cityName: vm.answers[3])
+                }
+            }
+            .padding()
+        }
+    }
+    private func answerButton(cityName: String) -> some View {
+        Button{
+            vm.submitAnswer(cityName)
+        } label: {
+            Text(cityName)
+                .mainViewText()
+        }
+        .disabled(vm.gameState != .playing)
     }
 }

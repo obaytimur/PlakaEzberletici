@@ -115,6 +115,12 @@ struct City: Codable{
     let randomOffSet = Double.random(in: -10.0...10.0)
 }
 
+struct GameStatistics: Identifiable {
+    let id = UUID()
+    let city: City
+    let wasCorrect: Bool
+}
+
 enum Constants {
     static let cities = [
         City(name: "Adana", plate: "01", answers: ["Adıyaman", "Afyon", "Ağrı"]),

@@ -17,6 +17,7 @@ struct GameView: View {
                 cardPile
                 flashMarks
             }
+            endScreen
             answerButtons
         }
         .navigationTitle(Constants.appTitle)
@@ -95,6 +96,24 @@ extension GameView {
                 Image(systemName: "x.circle.fill")
                     .wrong()
                     .opacity(vm.failing ? 1 : 0)
+        }
+    }
+    @ViewBuilder
+    private var endScreen: some View {
+        if vm.gameState == .finished{
+            ScrollView {
+                VStack{
+                    ForEach(vm.stats) {stat in
+                        HStack{
+                            Text(stat.city.name)
+                                .font(.title)
+                            Image(systemName: stat.wasCorrect ? "checkmark.circle" : "x.circle")
+                                .foregroundColor(stat.wasCorrect ? .green : .red)
+                        }
+                    }
+                }
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
     }
 }

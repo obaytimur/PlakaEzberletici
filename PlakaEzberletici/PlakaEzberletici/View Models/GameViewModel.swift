@@ -21,6 +21,8 @@ final class GameViewModel: ObservableObject {
     
     var gameState: GameState = .loading
     
+    var stats = [GameStatistics]()
+    
     enum GameState {
         case loading, playing, submitting, finished
     }
@@ -52,12 +54,18 @@ final class GameViewModel: ObservableObject {
             self.flipped = false
             self.rotation = 0.0
             self.setupAnswers()
+            self.isGameFinished()
         }.playAfter(duration: Constants.nextCardAnimationLength)
+    }
+    func isGameFinished() {
+        if cards.isEmpty {gameState = .finished}
     }
     func submitAnswer(_ cityName: String) {
         gameState = .submitting
         
         let answerCorrect = cityName == topCard.name
+        let statistic = GameStatistics(city: topCard, wasCorrect: answerCorrect)
+        stats.append(statistic)
         flipping()
         flash(passing: answerCorrect)
         nextCard()

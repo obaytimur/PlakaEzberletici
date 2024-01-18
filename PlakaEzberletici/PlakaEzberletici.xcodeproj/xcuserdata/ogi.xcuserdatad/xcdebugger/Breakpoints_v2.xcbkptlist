@@ -7,17 +7,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B9AD0512-EB66-41BA-BE43-FA79E5D2A717"
+            uuid = "F7E87FFA-6EAB-4253-BD46-2BD072D11B55"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "PlakaEzberletici/Plakalar.swift"
+            filePath = "PlakaEzberletici/Views/CardFan.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "CardFan"
+            landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

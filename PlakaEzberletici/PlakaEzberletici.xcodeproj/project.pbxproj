@@ -14,6 +14,17 @@
 		EE1BCDE02B02B381005D74CB /* PlakaEzberleticiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1BCDDF2B02B381005D74CB /* PlakaEzberleticiTests.swift */; };
 		EE1BCDEA2B02B381005D74CB /* PlakaEzberleticiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1BCDE92B02B381005D74CB /* PlakaEzberleticiUITests.swift */; };
 		EE1BCDEC2B02B381005D74CB /* PlakaEzberleticiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1BCDEB2B02B381005D74CB /* PlakaEzberleticiUITestsLaunchTests.swift */; };
+		EE6312432B516D5600CB8E23 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6312422B516D5600CB8E23 /* GameView.swift */; };
+		EE6312452B516E5C00CB8E23 /* TextStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6312442B516E5C00CB8E23 /* TextStyles.swift */; };
+		EE6312472B516FFB00CB8E23 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6312462B516FFB00CB8E23 /* GameViewModel.swift */; };
+		EE70722A2B5047B60016595F /* MiniCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7072292B5047B60016595F /* MiniCardView.swift */; };
+		EE70722C2B5049B30016595F /* CardFan.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE70722B2B5049B30016595F /* CardFan.swift */; };
+		EE7C91482B4EC4A6001528EA /* FrontCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C91472B4EC4A6001528EA /* FrontCardView.swift */; };
+		EE7C914A2B4ED73D001528EA /* CardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C91492B4ED73D001528EA /* CardModifier.swift */; };
+		EE7C914D2B4ED9B3001528EA /* BackCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C914C2B4ED9B3001528EA /* BackCardView.swift */; };
+		EEB3848E2B50518C00497D0C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB3848D2B50518C00497D0C /* ContentViewModel.swift */; };
+		EEB384922B5058B000497D0C /* FlipAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB384912B5058B000497D0C /* FlipAnimation.swift */; };
+		EEB384942B505CEF00497D0C /* CityCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB384932B505CEF00497D0C /* CityCardView.swift */; };
 		EEB5CC102B02B4A7000DBE03 /* Plakalar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB5CC0F2B02B4A7000DBE03 /* Plakalar.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +56,17 @@
 		EE1BCDE52B02B381005D74CB /* PlakaEzberleticiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlakaEzberleticiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE1BCDE92B02B381005D74CB /* PlakaEzberleticiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlakaEzberleticiUITests.swift; sourceTree = "<group>"; };
 		EE1BCDEB2B02B381005D74CB /* PlakaEzberleticiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlakaEzberleticiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EE6312422B516D5600CB8E23 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		EE6312442B516E5C00CB8E23 /* TextStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyles.swift; sourceTree = "<group>"; };
+		EE6312462B516FFB00CB8E23 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		EE7072292B5047B60016595F /* MiniCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCardView.swift; sourceTree = "<group>"; };
+		EE70722B2B5049B30016595F /* CardFan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFan.swift; sourceTree = "<group>"; };
+		EE7C91472B4EC4A6001528EA /* FrontCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCardView.swift; sourceTree = "<group>"; };
+		EE7C91492B4ED73D001528EA /* CardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
+		EE7C914C2B4ED9B3001528EA /* BackCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackCardView.swift; sourceTree = "<group>"; };
+		EEB3848D2B50518C00497D0C /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		EEB384912B5058B000497D0C /* FlipAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipAnimation.swift; sourceTree = "<group>"; };
+		EEB384932B505CEF00497D0C /* CityCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCardView.swift; sourceTree = "<group>"; };
 		EEB5CC0F2B02B4A7000DBE03 /* Plakalar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plakalar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,9 +118,11 @@
 		EE1BCDCD2B02B380005D74CB /* PlakaEzberletici */ = {
 			isa = PBXGroup;
 			children = (
-				EEB5CC0F2B02B4A7000DBE03 /* Plakalar.swift */,
 				EE1BCDCE2B02B380005D74CB /* PlakaEzberleticiApp.swift */,
-				EE1BCDD02B02B380005D74CB /* ContentView.swift */,
+				EE6312402B51672000CB8E23 /* Data */,
+				EE6312412B51675000CB8E23 /* Models */,
+				EE63123F2B51671200CB8E23 /* View Models */,
+				EE7C91462B4EC485001528EA /* Views */,
 				EE1BCDD22B02B381005D74CB /* Assets.xcassets */,
 				EE1BCDD42B02B381005D74CB /* Preview Content */,
 			);
@@ -128,6 +152,47 @@
 				EE1BCDEB2B02B381005D74CB /* PlakaEzberleticiUITestsLaunchTests.swift */,
 			);
 			path = PlakaEzberleticiUITests;
+			sourceTree = "<group>";
+		};
+		EE63123F2B51671200CB8E23 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				EEB3848D2B50518C00497D0C /* ContentViewModel.swift */,
+				EE6312462B516FFB00CB8E23 /* GameViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		EE6312402B51672000CB8E23 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EE6312412B51675000CB8E23 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EEB5CC0F2B02B4A7000DBE03 /* Plakalar.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EE7C91462B4EC485001528EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE7C91472B4EC4A6001528EA /* FrontCardView.swift */,
+				EE7C914C2B4ED9B3001528EA /* BackCardView.swift */,
+				EE7C91492B4ED73D001528EA /* CardModifier.swift */,
+				EE7072292B5047B60016595F /* MiniCardView.swift */,
+				EE70722B2B5049B30016595F /* CardFan.swift */,
+				EE1BCDD02B02B380005D74CB /* ContentView.swift */,
+				EEB384912B5058B000497D0C /* FlipAnimation.swift */,
+				EEB384932B505CEF00497D0C /* CityCardView.swift */,
+				EE6312422B516D5600CB8E23 /* GameView.swift */,
+				EE6312442B516E5C00CB8E23 /* TextStyles.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,9 +325,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEB384942B505CEF00497D0C /* CityCardView.swift in Sources */,
+				EE7C91482B4EC4A6001528EA /* FrontCardView.swift in Sources */,
+				EE7C914D2B4ED9B3001528EA /* BackCardView.swift in Sources */,
+				EE7C914A2B4ED73D001528EA /* CardModifier.swift in Sources */,
 				EE1BCDD12B02B380005D74CB /* ContentView.swift in Sources */,
+				EE70722A2B5047B60016595F /* MiniCardView.swift in Sources */,
+				EE6312472B516FFB00CB8E23 /* GameViewModel.swift in Sources */,
+				EEB3848E2B50518C00497D0C /* ContentViewModel.swift in Sources */,
 				EE1BCDCF2B02B380005D74CB /* PlakaEzberleticiApp.swift in Sources */,
+				EEB384922B5058B000497D0C /* FlipAnimation.swift in Sources */,
+				EE6312452B516E5C00CB8E23 /* TextStyles.swift in Sources */,
 				EEB5CC102B02B4A7000DBE03 /* Plakalar.swift in Sources */,
+				EE6312432B516D5600CB8E23 /* GameView.swift in Sources */,
+				EE70722C2B5049B30016595F /* CardFan.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

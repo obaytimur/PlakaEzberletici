@@ -142,4 +142,5 @@ enum Constants {
     static let cardFlipAnimationLength: Double = 0.4
     static var halfFlipAnimationLength: Double { Constants.cardFlipAnimationLength / 2 }
     static let flasfAnimationLength: Double = 0.33
+    static let setupDuration: Double = 1.0
 }

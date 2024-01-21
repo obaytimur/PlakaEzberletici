@@ -28,13 +28,19 @@ final class GameViewModel: ObservableObject {
     }
     
     func setupGame() {
-        for card in Constants.cities{
-            cards.append(card)
-        }
-        
         self.gameState = .loading
-        setupAnswers()
-        self.gameState = .playing
+        
+        var delay = 0.0
+        for card in Constants.cities{
+            FlipAnimation(animation: .spring, duration: Constants.setupDuration) {
+                self.cards.append(card)
+            }.playAfter(duration: delay)
+            delay += 0.05
+        }
+        FlipAnimation(duration: Constants.setupDuration) {
+            self.setupAnswers()
+            self.gameState = .playing
+        }.playAfter(duration: delay)
     }
     
     func setupAnswers() {

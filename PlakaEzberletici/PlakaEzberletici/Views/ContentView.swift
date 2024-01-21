@@ -63,8 +63,9 @@ extension ContentView {
     private var mainList: some View{
         VStack {
             NavigationLink(destination: GameView() ) {
-                Text("Start")
+                Text("Başla")
                     .mainViewText()
+                    .background(Color(hex: 0x354FAB))
             }
         }
     }

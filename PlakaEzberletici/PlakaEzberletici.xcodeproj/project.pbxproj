@@ -123,6 +123,7 @@
 				EE6312412B51675000CB8E23 /* Models */,
 				EE63123F2B51671200CB8E23 /* View Models */,
 				EE7C91462B4EC485001528EA /* Views */,
+				EE84CCEE2B5F25EA00D2DA4F /* Stylers */,
 				EE1BCDD22B02B381005D74CB /* Assets.xcassets */,
 				EE1BCDD42B02B381005D74CB /* Preview Content */,
 			);
@@ -181,18 +182,33 @@
 		EE7C91462B4EC485001528EA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EE1BCDD02B02B380005D74CB /* ContentView.swift */,
+				EEB384912B5058B000497D0C /* FlipAnimation.swift */,
+				EE6312422B516D5600CB8E23 /* GameView.swift */,
+				EE84CCED2B5F25C100D2DA4F /* CardViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE84CCED2B5F25C100D2DA4F /* CardViews */ = {
+			isa = PBXGroup;
+			children = (
 				EE7C91472B4EC4A6001528EA /* FrontCardView.swift */,
 				EE7C914C2B4ED9B3001528EA /* BackCardView.swift */,
 				EE7C91492B4ED73D001528EA /* CardModifier.swift */,
 				EE7072292B5047B60016595F /* MiniCardView.swift */,
 				EE70722B2B5049B30016595F /* CardFan.swift */,
-				EE1BCDD02B02B380005D74CB /* ContentView.swift */,
-				EEB384912B5058B000497D0C /* FlipAnimation.swift */,
 				EEB384932B505CEF00497D0C /* CityCardView.swift */,
-				EE6312422B516D5600CB8E23 /* GameView.swift */,
+			);
+			path = CardViews;
+			sourceTree = "<group>";
+		};
+		EE84CCEE2B5F25EA00D2DA4F /* Stylers */ = {
+			isa = PBXGroup;
+			children = (
 				EE6312442B516E5C00CB8E23 /* TextStyles.swift */,
 			);
-			path = Views;
+			path = Stylers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

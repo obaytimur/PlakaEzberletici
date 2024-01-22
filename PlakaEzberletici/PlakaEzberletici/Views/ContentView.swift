@@ -56,8 +56,9 @@ extension ContentView {
     }
     private var mainScreen: some View {
         VStack {
-            mainList
             Spacer()
+            mainList
+                .padding()
         }
     }
     private var mainList: some View{
@@ -65,7 +66,6 @@ extension ContentView {
             NavigationLink(destination: GameView() ) {
                 Text("Başla")
                     .mainViewText()
-                    .background(Color(hex: 0x354FAB))
             }
         }
     }

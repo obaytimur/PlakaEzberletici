@@ -116,4 +116,7 @@ enum Constants {
     static var halfFlipAnimationLength: Double { Constants.cardFlipAnimationLength / 2 }
     static let flasfAnimationLength: Double = 0.33
     static let setupDuration: Double = 1.0
+    
+    static let lightBlue:  UInt =  0xD7DCEE
+    static let darkBlue: UInt =  0x354FAB
 }

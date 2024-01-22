@@ -31,11 +31,11 @@ final class GameViewModel: ObservableObject {
         self.gameState = .loading
         
         var delay = 0.0
-        for card in Constants.cities{
+        for card in Constants.cities.shuffled(){
             FlipAnimation(animation: .spring, duration: Constants.setupDuration) {
                 self.cards.append(card)
             }.playAfter(duration: delay)
-            delay += 0.05
+            delay += 0.02
         }
         FlipAnimation(duration: Constants.setupDuration) {
             self.setupAnswers()
@@ -45,7 +45,16 @@ final class GameViewModel: ObservableObject {
     
     func setupAnswers() {
         self.answers = []
-        var newAnswers = topCard.answers
+        var newAnswers: [String] = []
+        if let index = Constants.cities.firstIndex(where: { $0.name == topCard.name}) {
+            if index == 0 {
+                newAnswers = [Constants.cities[(index) + 1].name, Constants.cities[(index) + 2].name, Constants.cities[(index) + 3].name]
+            } else if index == Constants.cities.count - 1 || index == Constants.cities.count - 2 {
+                newAnswers = [Constants.cities[(index) - 3].name, Constants.cities[(index) - 2].name, Constants.cities[(index) - 1].name]
+            } else {
+                newAnswers = [Constants.cities[(index) - 1].name, Constants.cities[(index) + 1].name, Constants.cities[(index) + 2].name]
+            }
+        }
         newAnswers.append(topCard.name)
         
         for answer in newAnswers.shuffled() {

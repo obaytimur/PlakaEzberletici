@@ -13,12 +13,15 @@ struct GameView: View {
     
     var body: some View {
         VStack {
-            ZStack {
-                cardPile
-                flashMarks
+            if vm.gameState != .finished {
+                ZStack {
+                    cardPile
+                    flashMarks
+                }
+                .frame(height: 300)
+                answerButtons
             }
             endScreen
-            answerButtons
         }
         .navigationTitle(Constants.appTitle)
         .navigationBarTitleDisplayMode(.large)

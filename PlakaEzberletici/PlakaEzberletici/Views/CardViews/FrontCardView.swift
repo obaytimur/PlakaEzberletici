@@ -30,7 +30,7 @@ extension FrontCardView {
         Text(city.plate)
             .font(.custom("ArialRoundedMTBold", fixedSize: 50))
             .fixedSize(horizontal: false, vertical: true)
-            .foregroundStyle(Color(hex: 0x354FAB))
+            .foregroundStyle(Color(hex: Constants.darkBlue))
             .clipShape(RoundedRectangle(cornerRadius: 10))
             .cornerRadius(15)
     }

@@ -22,6 +22,7 @@
 		EE7C91482B4EC4A6001528EA /* FrontCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C91472B4EC4A6001528EA /* FrontCardView.swift */; };
 		EE7C914A2B4ED73D001528EA /* CardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C91492B4ED73D001528EA /* CardModifier.swift */; };
 		EE7C914D2B4ED9B3001528EA /* BackCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7C914C2B4ED9B3001528EA /* BackCardView.swift */; };
+		EE8A66752B62FC3F00C7389E /* TrPlateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8A66742B62FC3F00C7389E /* TrPlateView.swift */; };
 		EEB3848E2B50518C00497D0C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB3848D2B50518C00497D0C /* ContentViewModel.swift */; };
 		EEB384922B5058B000497D0C /* FlipAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB384912B5058B000497D0C /* FlipAnimation.swift */; };
 		EEB384942B505CEF00497D0C /* CityCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB384932B505CEF00497D0C /* CityCardView.swift */; };
@@ -64,6 +65,7 @@
 		EE7C91472B4EC4A6001528EA /* FrontCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCardView.swift; sourceTree = "<group>"; };
 		EE7C91492B4ED73D001528EA /* CardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModifier.swift; sourceTree = "<group>"; };
 		EE7C914C2B4ED9B3001528EA /* BackCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackCardView.swift; sourceTree = "<group>"; };
+		EE8A66742B62FC3F00C7389E /* TrPlateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrPlateView.swift; sourceTree = "<group>"; };
 		EEB3848D2B50518C00497D0C /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		EEB384912B5058B000497D0C /* FlipAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipAnimation.swift; sourceTree = "<group>"; };
 		EEB384932B505CEF00497D0C /* CityCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCardView.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 		EE84CCED2B5F25C100D2DA4F /* CardViews */ = {
 			isa = PBXGroup;
 			children = (
+				EE8A66742B62FC3F00C7389E /* TrPlateView.swift */,
 				EE7C91472B4EC4A6001528EA /* FrontCardView.swift */,
 				EE7C914C2B4ED9B3001528EA /* BackCardView.swift */,
 				EE7C91492B4ED73D001528EA /* CardModifier.swift */,
@@ -341,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE8A66752B62FC3F00C7389E /* TrPlateView.swift in Sources */,
 				EEB384942B505CEF00497D0C /* CityCardView.swift in Sources */,
 				EE7C91482B4EC4A6001528EA /* FrontCardView.swift in Sources */,
 				EE7C914D2B4ED9B3001528EA /* BackCardView.swift in Sources */,

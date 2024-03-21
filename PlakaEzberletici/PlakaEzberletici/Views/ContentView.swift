@@ -30,8 +30,10 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             VStack {
+                Spacer()
                 CardFan(cities: miniCities)
                     .scaleEffect(vm.splashScreenState == .on ? 0.5 : 1)
+                Spacer()
                 if vm.splashScreenState == .on {
                     splashScreen
                 } else {
@@ -56,7 +58,6 @@ extension ContentView {
     }
     private var mainScreen: some View {
         VStack {
-            Spacer()
             mainList
                 .padding()
         }

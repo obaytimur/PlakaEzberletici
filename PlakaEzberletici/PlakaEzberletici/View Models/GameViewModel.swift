@@ -14,12 +14,15 @@ final class GameViewModel: ObservableObject {
     @Published var answers = [String]()
     @Published var passing = false
     @Published var failing = false
+    @Published var startingIndex = 10
     
     var topCard: City {
         cards.isEmpty ? Constants.cities.first! : cards[cards.count-1]
     }
     
     var gameState: GameState = .loading
+    
+    let shuffledCities = Constants.cities.shuffled()
     
     var stats = [GameStatistics]()
     
@@ -31,7 +34,7 @@ final class GameViewModel: ObservableObject {
         self.gameState = .loading
         
         var delay = 0.0
-        for card in Constants.cities.shuffled(){
+        for card in shuffledCities.prefix(startingIndex){
             FlipAnimation(animation: .spring, duration: Constants.setupDuration) {
                 self.cards.append(card)
             }.playAfter(duration: delay)
@@ -77,7 +80,11 @@ final class GameViewModel: ObservableObject {
     }
     func submitAnswer(_ cityName: String) {
         gameState = .submitting
-        
+        let isIndexValid = self.shuffledCities.indices.contains(self.startingIndex+1)
+        if isIndexValid {
+            self.cards.insert(self.shuffledCities[self.startingIndex+1], at: 0)
+            self.startingIndex += 1
+        }
         let answerCorrect = cityName == topCard.name
         let statistic = GameStatistics(city: topCard, wasCorrect: answerCorrect)
         stats.append(statistic)

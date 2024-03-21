@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE04AAF32BAC98E100AD9D08 /* PlusJakartaSans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE04AAF22BAC989D00AD9D08 /* PlusJakartaSans-VariableFont_wght.ttf */; };
+		EE04AAF62BACA1FB00AD9D08 /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EE04AAF52BACA1FB00AD9D08 /* PlusJakartaSans-Bold.ttf */; };
 		EE1BCDCF2B02B380005D74CB /* PlakaEzberleticiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1BCDCE2B02B380005D74CB /* PlakaEzberleticiApp.swift */; };
 		EE1BCDD12B02B380005D74CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1BCDD02B02B380005D74CB /* ContentView.swift */; };
 		EE1BCDD32B02B381005D74CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE1BCDD22B02B381005D74CB /* Assets.xcassets */; };
@@ -47,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE04AAF22BAC989D00AD9D08 /* PlusJakartaSans-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		EE04AAF42BAC99EF00AD9D08 /* Plakalar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Plakalar-Info.plist"; sourceTree = "<group>"; };
+		EE04AAF52BACA1FB00AD9D08 /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Bold.ttf"; sourceTree = "<group>"; };
 		EE1BCDCB2B02B380005D74CB /* Plakalar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plakalar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE1BCDCE2B02B380005D74CB /* PlakaEzberleticiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlakaEzberleticiApp.swift; sourceTree = "<group>"; };
 		EE1BCDD02B02B380005D74CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,9 +102,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE04AAF12BAC983300AD9D08 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EE04AAF22BAC989D00AD9D08 /* PlusJakartaSans-VariableFont_wght.ttf */,
+				EE04AAF52BACA1FB00AD9D08 /* PlusJakartaSans-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		EE1BCDC22B02B380005D74CB = {
 			isa = PBXGroup;
 			children = (
+				EE04AAF42BAC99EF00AD9D08 /* Plakalar-Info.plist */,
 				EE1BCDCD2B02B380005D74CB /* PlakaEzberletici */,
 				EE1BCDDE2B02B381005D74CB /* PlakaEzberleticiTests */,
 				EE1BCDE82B02B381005D74CB /* PlakaEzberleticiUITests */,
@@ -209,6 +224,7 @@
 		EE84CCEE2B5F25EA00D2DA4F /* Stylers */ = {
 			isa = PBXGroup;
 			children = (
+				EE04AAF12BAC983300AD9D08 /* Fonts */,
 				EE6312442B516E5C00CB8E23 /* TextStyles.swift */,
 			);
 			path = Stylers;
@@ -319,7 +335,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE1BCDD62B02B381005D74CB /* Preview Assets.xcassets in Resources */,
+				EE04AAF62BACA1FB00AD9D08 /* PlusJakartaSans-Bold.ttf in Resources */,
 				EE1BCDD32B02B381005D74CB /* Assets.xcassets in Resources */,
+				EE04AAF32BAC98E100AD9D08 /* PlusJakartaSans-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +543,7 @@
 				DEVELOPMENT_TEAM = S5ZBBP3832;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Plakalar-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +577,7 @@
 				DEVELOPMENT_TEAM = S5ZBBP3832;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Plakalar-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

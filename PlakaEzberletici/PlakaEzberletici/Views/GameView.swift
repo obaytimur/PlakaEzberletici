@@ -117,13 +117,17 @@ extension GameView {
     private var endScreen: some View {
         if vm.gameState == .finished{
             ScrollView {
-                VStack{
-                    ForEach(vm.stats) {stat in
-                        HStack{
-                            Text(stat.city.name)
-                                .font(.title)
-                            Image(systemName: stat.wasCorrect ? "checkmark.circle" : "x.circle")
-                                .foregroundColor(stat.wasCorrect ? .green : .red)
+                ZStack {
+                    Color(hex: Constants.backgroundColor)
+                        .ignoresSafeArea()
+                    VStack{
+                        ForEach(vm.stats) {stat in
+                            HStack{
+                                Text(stat.city.name)
+                                    .font(.title)
+                                Image(systemName: stat.wasCorrect ? "checkmark.circle" : "x.circle")
+                                    .foregroundColor(stat.wasCorrect ? .green : .red)
+                            }
                         }
                     }
                 }

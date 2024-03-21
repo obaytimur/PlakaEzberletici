@@ -81,9 +81,9 @@ final class GameViewModel: ObservableObject {
     }
     func submitAnswer(_ cityName: String) {
         gameState = .submitting
-        let isIndexValid = self.shuffledCities.indices.contains(self.startingIndex+1)
+        let isIndexValid = self.shuffledCities.indices.contains(self.startingIndex)
         if isIndexValid {
-            self.cards.insert(self.shuffledCities[self.startingIndex+1], at: 0)
+            self.cards.insert(self.shuffledCities[self.startingIndex], at: 0)
             self.startingIndex += 1
         }
         let answerCorrect = cityName == topCard.name

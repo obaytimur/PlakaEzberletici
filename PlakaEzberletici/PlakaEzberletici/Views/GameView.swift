@@ -23,6 +23,12 @@ struct GameView: View {
                     }
                     .frame(height: 300)
                     answerButtons
+                    HStack{
+                        Text("Skor: \(vm.totalCorrects)/\(vm.stats.count)")
+                            .font(.title)
+                            .bold()
+                            .foregroundStyle(Color(hex: Constants.darkBlue))
+                    }
                 }
                 endScreen
             }

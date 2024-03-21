@@ -25,6 +25,7 @@ final class GameViewModel: ObservableObject {
     let shuffledCities = Constants.cities.shuffled()
     
     var stats = [GameStatistics]()
+    var totalCorrects = 0
     
     enum GameState {
         case loading, playing, submitting, finished
@@ -86,6 +87,7 @@ final class GameViewModel: ObservableObject {
             self.startingIndex += 1
         }
         let answerCorrect = cityName == topCard.name
+        if answerCorrect {totalCorrects += 1}
         let statistic = GameStatistics(city: topCard, wasCorrect: answerCorrect)
         stats.append(statistic)
         flipping()

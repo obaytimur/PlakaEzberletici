@@ -11,10 +11,16 @@ struct CardFan: View {
     var cities: [City]
     
     var body: some View {
-        ZStack {
-            images
+        VStack {
             appTitle
-                .padding(.top, -200)
+                .padding(.bottom, 50)
+            Text("Trafikte cahilce küfretmeyin \nMemleketine de sövün")
+                .padding()
+                .foregroundColor(Color(hex: Constants.darkBlue))
+                .font(.headline)
+                .multilineTextAlignment(.center)
+            images
+                .padding()
         }
     }
 }

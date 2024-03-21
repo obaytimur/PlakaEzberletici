@@ -12,21 +12,26 @@ struct GameView: View {
     @StateObject var vm = GameViewModel()
     
     var body: some View {
-        VStack {
-            if vm.gameState != .finished {
-                ZStack {
-                    cardPile
-                    flashMarks
+        ZStack{
+            Color(hex: Constants.backgroundColor)
+                .ignoresSafeArea()
+            VStack {
+                if vm.gameState != .finished {
+                    ZStack {
+                        cardPile
+                        flashMarks
+                    }
+                    .frame(height: 300)
+                    answerButtons
                 }
-                .frame(height: 300)
-                answerButtons
+                endScreen
             }
-            endScreen
-        }
-        .navigationTitle(Constants.appTitle)
-        .navigationBarTitleDisplayMode(.large)
-        .onAppear() {
-            vm.setupGame()
+            .navigationTitle(Constants.appTitle)
+            .navigationBarTitleTextColor(Color(hex: Constants.darkBlue))
+            .navigationBarTitleDisplayMode(.large)
+            .onAppear() {
+                vm.setupGame()
+            }
         }
     }
 }

@@ -14,6 +14,7 @@ struct CardFan: View {
         ZStack {
             images
             appTitle
+                .padding(.top, -200)
         }
     }
 }
@@ -42,9 +43,7 @@ extension CardFan {
             Text(Constants.appTitle)
                 .offset(y: 70)
                 .foregroundStyle(
-                    .black.gradient.shadow(
-                        .inner(color: .white.opacity(0.9), radius: 1)
-                    )
+                    Color(hex: Constants.darkBlue)
                 )
                 .fontWeight(.heavy)
                 .font(.system(size: 60))

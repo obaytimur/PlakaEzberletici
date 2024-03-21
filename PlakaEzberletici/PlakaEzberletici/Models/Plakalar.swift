@@ -107,8 +107,8 @@ enum Constants {
     static let cardHeight: CGFloat = 200
     static let cardWidth: CGFloat = 300
     
-    static let miniCardHeight: CGFloat = 200
-    static let miniCardWidth: CGFloat = 100
+    static let miniCardHeight: CGFloat = 100
+    static let miniCardWidth: CGFloat = 150
     
     static let appTitle = "Plakalar"
     static let nextCardAnimationLength = 1.0
@@ -117,6 +117,7 @@ enum Constants {
     static let flasfAnimationLength: Double = 0.33
     static let setupDuration: Double = 1.0
     
-    static let lightBlue:  UInt =  0xD7DCEE
-    static let darkBlue: UInt =  0x354FAB
+    static let lightBlue:  UInt =  0xBBE2EC
+    static let darkBlue: UInt =  0x0D9276
+    static let backgroundColor: UInt = 0xFFF6E9
 }

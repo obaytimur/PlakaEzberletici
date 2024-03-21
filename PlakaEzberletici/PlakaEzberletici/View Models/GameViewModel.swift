@@ -39,7 +39,7 @@ final class GameViewModel: ObservableObject {
             FlipAnimation(animation: .spring, duration: Constants.setupDuration) {
                 self.cards.append(card)
             }.playAfter(duration: delay)
-            delay += 0.02
+            delay += 0.05
         }
         FlipAnimation(duration: Constants.setupDuration) {
             self.setupAnswers()

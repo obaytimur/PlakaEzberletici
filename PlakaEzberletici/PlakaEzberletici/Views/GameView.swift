@@ -59,7 +59,7 @@ extension GameView {
     }
     private func cityCard(city: City, isTopCard: Bool) -> some View {
         cardSides(city: city, isTopCard: isTopCard)
-            .transition(.slide)
+            .transition(.asymmetric(insertion: .slide, removal: .opacity))
             .zIndex(isTopCard ? 999 : 0)
             .allowsHitTesting(isTopCard ? true : false)
             .offset(x: isTopCard ? 0 : city.randomOffSet, y: isTopCard ? 0 : city.randomOffSet)

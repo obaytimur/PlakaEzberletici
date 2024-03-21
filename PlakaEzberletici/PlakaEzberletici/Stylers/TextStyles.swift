@@ -33,12 +33,12 @@ extension Image {
     func correct() -> some View {
         self.foregroundColor(.green)
             .fontWeight(.thin)
-            .font(.system(size: 200))
+            .font(.system(size: 120))
     }
     
     func wrong() -> some View {
         self.foregroundColor(.red)
             .fontWeight(.thin)
-            .font(.system(size: 200))
+            .font(.system(size: 120))
     }
 }

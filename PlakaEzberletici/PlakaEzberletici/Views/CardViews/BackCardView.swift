@@ -16,6 +16,9 @@ struct BackCardView: View {
             Text("\(city.name)")
                 .font(.custom("ArialRoundedMTBold", fixedSize: 50))
                 .foregroundStyle(Color(hex: Constants.darkBlue))
+            Text("\(city.plate)")
+                .font(.custom("ArialRoundedMTBold", fixedSize: 50))
+                .foregroundStyle(Color(hex: Constants.darkBlue))
         }.card()
     }
 }

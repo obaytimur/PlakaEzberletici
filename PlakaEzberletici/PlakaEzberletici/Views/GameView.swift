@@ -20,6 +20,7 @@ struct GameView: View {
                     ZStack {
                         cardPile
                         flashMarks
+                            .padding(.top, -250)
                     }
                     .frame(height: 300)
                     answerButtons
@@ -106,10 +107,10 @@ extension GameView {
                 Image(systemName: "checkmark.circle.fill")
                     .correct()
                     .opacity(vm.passing ? 1 : 0)
-            }
                 Image(systemName: "x.circle.fill")
                     .wrong()
                     .opacity(vm.failing ? 1 : 0)
+            }
         }
     }
     @ViewBuilder

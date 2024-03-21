@@ -47,14 +47,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EE1BCDCB2B02B380005D74CB /* PlakaEzberletici.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlakaEzberletici.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE1BCDCB2B02B380005D74CB /* Plakalar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Plakalar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE1BCDCE2B02B380005D74CB /* PlakaEzberleticiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlakaEzberleticiApp.swift; sourceTree = "<group>"; };
 		EE1BCDD02B02B380005D74CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE1BCDD22B02B381005D74CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE1BCDD52B02B381005D74CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		EE1BCDDB2B02B381005D74CB /* PlakaEzberleticiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlakaEzberleticiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE1BCDDB2B02B381005D74CB /* PlakalarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlakalarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE1BCDDF2B02B381005D74CB /* PlakaEzberleticiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlakaEzberleticiTests.swift; sourceTree = "<group>"; };
-		EE1BCDE52B02B381005D74CB /* PlakaEzberleticiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlakaEzberleticiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE1BCDE52B02B381005D74CB /* PlakalarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlakalarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE1BCDE92B02B381005D74CB /* PlakaEzberleticiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlakaEzberleticiUITests.swift; sourceTree = "<group>"; };
 		EE1BCDEB2B02B381005D74CB /* PlakaEzberleticiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlakaEzberleticiUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EE6312422B516D5600CB8E23 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
@@ -110,9 +110,9 @@
 		EE1BCDCC2B02B380005D74CB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EE1BCDCB2B02B380005D74CB /* PlakaEzberletici.app */,
-				EE1BCDDB2B02B381005D74CB /* PlakaEzberleticiTests.xctest */,
-				EE1BCDE52B02B381005D74CB /* PlakaEzberleticiUITests.xctest */,
+				EE1BCDCB2B02B380005D74CB /* Plakalar.app */,
+				EE1BCDDB2B02B381005D74CB /* PlakalarTests.xctest */,
+				EE1BCDE52B02B381005D74CB /* PlakalarUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,9 +217,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EE1BCDCA2B02B380005D74CB /* PlakaEzberletici */ = {
+		EE1BCDCA2B02B380005D74CB /* Plakalar */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE1BCDEF2B02B381005D74CB /* Build configuration list for PBXNativeTarget "PlakaEzberletici" */;
+			buildConfigurationList = EE1BCDEF2B02B381005D74CB /* Build configuration list for PBXNativeTarget "Plakalar" */;
 			buildPhases = (
 				EE1BCDC72B02B380005D74CB /* Sources */,
 				EE1BCDC82B02B380005D74CB /* Frameworks */,
@@ -229,14 +229,14 @@
 			);
 			dependencies = (
 			);
-			name = PlakaEzberletici;
+			name = Plakalar;
 			productName = PlakaEzberletici;
-			productReference = EE1BCDCB2B02B380005D74CB /* PlakaEzberletici.app */;
+			productReference = EE1BCDCB2B02B380005D74CB /* Plakalar.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EE1BCDDA2B02B381005D74CB /* PlakaEzberleticiTests */ = {
+		EE1BCDDA2B02B381005D74CB /* PlakalarTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE1BCDF22B02B381005D74CB /* Build configuration list for PBXNativeTarget "PlakaEzberleticiTests" */;
+			buildConfigurationList = EE1BCDF22B02B381005D74CB /* Build configuration list for PBXNativeTarget "PlakalarTests" */;
 			buildPhases = (
 				EE1BCDD72B02B381005D74CB /* Sources */,
 				EE1BCDD82B02B381005D74CB /* Frameworks */,
@@ -247,14 +247,14 @@
 			dependencies = (
 				EE1BCDDD2B02B381005D74CB /* PBXTargetDependency */,
 			);
-			name = PlakaEzberleticiTests;
+			name = PlakalarTests;
 			productName = PlakaEzberleticiTests;
-			productReference = EE1BCDDB2B02B381005D74CB /* PlakaEzberleticiTests.xctest */;
+			productReference = EE1BCDDB2B02B381005D74CB /* PlakalarTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EE1BCDE42B02B381005D74CB /* PlakaEzberleticiUITests */ = {
+		EE1BCDE42B02B381005D74CB /* PlakalarUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EE1BCDF52B02B381005D74CB /* Build configuration list for PBXNativeTarget "PlakaEzberleticiUITests" */;
+			buildConfigurationList = EE1BCDF52B02B381005D74CB /* Build configuration list for PBXNativeTarget "PlakalarUITests" */;
 			buildPhases = (
 				EE1BCDE12B02B381005D74CB /* Sources */,
 				EE1BCDE22B02B381005D74CB /* Frameworks */,
@@ -265,9 +265,9 @@
 			dependencies = (
 				EE1BCDE72B02B381005D74CB /* PBXTargetDependency */,
 			);
-			name = PlakaEzberleticiUITests;
+			name = PlakalarUITests;
 			productName = PlakaEzberleticiUITests;
-			productReference = EE1BCDE52B02B381005D74CB /* PlakaEzberleticiUITests.xctest */;
+			productReference = EE1BCDE52B02B381005D74CB /* PlakalarUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -293,7 +293,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EE1BCDC62B02B380005D74CB /* Build configuration list for PBXProject "PlakaEzberletici" */;
+			buildConfigurationList = EE1BCDC62B02B380005D74CB /* Build configuration list for PBXProject "Plakalar" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -306,9 +306,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EE1BCDCA2B02B380005D74CB /* PlakaEzberletici */,
-				EE1BCDDA2B02B381005D74CB /* PlakaEzberleticiTests */,
-				EE1BCDE42B02B381005D74CB /* PlakaEzberleticiUITests */,
+				EE1BCDCA2B02B380005D74CB /* Plakalar */,
+				EE1BCDDA2B02B381005D74CB /* PlakalarTests */,
+				EE1BCDE42B02B381005D74CB /* PlakalarUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -384,12 +384,12 @@
 /* Begin PBXTargetDependency section */
 		EE1BCDDD2B02B381005D74CB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EE1BCDCA2B02B380005D74CB /* PlakaEzberletici */;
+			target = EE1BCDCA2B02B380005D74CB /* Plakalar */;
 			targetProxy = EE1BCDDC2B02B381005D74CB /* PBXContainerItemProxy */;
 		};
 		EE1BCDE72B02B381005D74CB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EE1BCDCA2B02B380005D74CB /* PlakaEzberletici */;
+			target = EE1BCDCA2B02B380005D74CB /* Plakalar */;
 			targetProxy = EE1BCDE62B02B381005D74CB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -596,7 +596,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlakaEzberletici.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PlakaEzberletici";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Plakalar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Plakalar";
 			};
 			name = Debug;
 		};
@@ -616,7 +616,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlakaEzberletici.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PlakaEzberletici";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Plakalar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Plakalar";
 			};
 			name = Release;
 		};
@@ -659,7 +659,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EE1BCDC62B02B380005D74CB /* Build configuration list for PBXProject "PlakaEzberletici" */ = {
+		EE1BCDC62B02B380005D74CB /* Build configuration list for PBXProject "Plakalar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE1BCDED2B02B381005D74CB /* Debug */,
@@ -668,7 +668,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EE1BCDEF2B02B381005D74CB /* Build configuration list for PBXNativeTarget "PlakaEzberletici" */ = {
+		EE1BCDEF2B02B381005D74CB /* Build configuration list for PBXNativeTarget "Plakalar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE1BCDF02B02B381005D74CB /* Debug */,
@@ -677,7 +677,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EE1BCDF22B02B381005D74CB /* Build configuration list for PBXNativeTarget "PlakaEzberleticiTests" */ = {
+		EE1BCDF22B02B381005D74CB /* Build configuration list for PBXNativeTarget "PlakalarTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE1BCDF32B02B381005D74CB /* Debug */,
@@ -686,7 +686,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EE1BCDF52B02B381005D74CB /* Build configuration list for PBXNativeTarget "PlakaEzberleticiUITests" */ = {
+		EE1BCDF52B02B381005D74CB /* Build configuration list for PBXNativeTarget "PlakalarUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EE1BCDF62B02B381005D74CB /* Debug */,

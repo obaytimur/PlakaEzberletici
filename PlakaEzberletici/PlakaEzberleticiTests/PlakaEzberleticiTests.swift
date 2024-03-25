@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import PlakaEzberletici
+@testable import Plakalar
 
 final class PlakaEzberleticiTests: XCTestCase {
 

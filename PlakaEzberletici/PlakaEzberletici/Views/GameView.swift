@@ -121,10 +121,15 @@ extension GameView {
                     Color(hex: Constants.backgroundColor)
                         .ignoresSafeArea()
                     VStack{
+                        Text("Skor: \(vm.totalCorrects)/\(vm.stats.count)")
+                            .font(.title)
+                            .bold()
+                            .foregroundStyle(Color(hex: Constants.darkBlue))
                         ForEach(vm.stats) {stat in
                             HStack{
                                 Text(stat.city.name)
                                     .font(.title)
+                                    .foregroundStyle(Color(hex: Constants.darkBlue))
                                 Image(systemName: stat.wasCorrect ? "checkmark.circle" : "x.circle")
                                     .foregroundColor(stat.wasCorrect ? .green : .red)
                             }
